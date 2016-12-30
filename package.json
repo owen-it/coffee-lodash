@@ -1,0 +1,28 @@
+{
+  "name": "coffee-lodash",
+  "version": "1.0.0",
+  "description": "Coffee Lodash",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "coffee --compile --output src/ dist/",
+    "compile:watch": "coffee --watch --compile --output src/ dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owen-it/coffee-lodash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owen-it/coffee-lodash/issues"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "homepage": "https://github.com/owen-it/coffee-lodash#readme",
+  "devDependencies": {
+    "coffee-script": "^1.12.2"
+  }
+}
