@@ -13,3 +13,6 @@ describe 'Last method', ->
     it 'Shoud return 254', ->
         number = last [109, 200, 254]
         expect(254).to.eql(number)
+    it 'Shoud return undefined', ->
+        number = first []
+        expect(undefined).to.eql(number)

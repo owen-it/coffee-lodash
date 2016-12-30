@@ -13,3 +13,6 @@ describe 'Heat method', ->
     it 'Shoud return 109', ->
         number = head [109, 200, 254]
         expect(109).to.eql(number)
+    it 'Shoud return undefined', ->
+        number = first []
+        expect(undefined).to.eql(number)
