@@ -14,6 +14,6 @@ _.last([1, 2, 3]);
 ###
 last = arr -> 
     length = arr?.length or 0
-    if length then arr[length - 1] else undefined    
+    if length then arr[length - 1]    
 
 module.exports = last

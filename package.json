@@ -4,8 +4,8 @@
   "description": "Coffee Lodash",
   "main": "dist/index.js",
   "scripts": {
-    "compile": "coffee --compile --output src/ dist/",
-    "compile:watch": "coffee --watch --compile --output src/ dist/",
+    "compile": "coffee --compile --output dist/ src/",
+    "compile:watch": "coffee --watch --compile --output dist/ src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
