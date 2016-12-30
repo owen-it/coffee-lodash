@@ -12,7 +12,7 @@ Gets the last element of `array`.
 _.last([1, 2, 3]);
 // => 3
 ###
-last = arr -> 
+last = (arr) -> 
     length = arr?.length or 0
     if length then arr[length - 1]    
 

@@ -17,7 +17,6 @@ _.head([]);
 ###
 
 head = (arr) -> 
-    length = arr?.length or 0
-    if length then arr[0]
+    if arr?.length then arr[0]
 
 module.exports = head

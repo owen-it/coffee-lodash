@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "coffee --compile --output dist/ src/",
     "compile:watch": "coffee --watch --compile --output dist/ src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers coffee:coffee-script/register"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   ],
   "homepage": "https://github.com/owen-it/coffee-lodash#readme",
   "devDependencies": {
-    "coffee-script": "^1.12.2"
+    "chai": "^3.5.0",
+    "coffee-script": "^1.12.2",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0"
   }
 }
