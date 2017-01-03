@@ -4,7 +4,7 @@ expect = require 'expect.js'
 head = require '../src/head'
 
 
-describe 'Heat method', ->
+describe 'Head method', ->
     beforeEach ->
         # ...
     it 'Shoud return 5', ->
