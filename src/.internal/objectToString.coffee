@@ -3,7 +3,7 @@
 # [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring) 
 # of values.
 ###
-nativeObjectToString = object.prototype.toString
+nativeObjectToString = Object.prototype.toString
 
 ###
 # Converts `value` to a string using `Object.prototype.toString`.
