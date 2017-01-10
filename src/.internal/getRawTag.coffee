@@ -18,21 +18,21 @@ symToStringTag = if Symbol then Symbol.toStringTag else undefined
 # @returns {string} Returns the raw `toStringTag`.
 ###
 getRawTag = (value) -> 
-		isOwn = hasOwnProperty.call value, symToStringTag
-		tag = value[symToStringTag]
-		unmasked = false
+	isOwn = hasOwnProperty.call value, symToStringTag
+	tag = value[symToStringTag]
+	unmasked = false
 
-		try
-			value[symToStringTag] = undefined
-			unmasked = true
-	
-		result = nativeObjectToString.call(value)
-		if unmasked 
-			if isOwn
-				value[symToStringTag] = tag
-			else
-				delete value[symToStringTag]
+	try
+		value[symToStringTag] = undefined
+		unmasked = true
 
-		result
+	result = nativeObjectToString.call(value)
+	if unmasked 
+		if isOwn
+			value[symToStringTag] = tag
+		else
+			delete value[symToStringTag]
+
+	result
 
 module.exports = getRawTag
