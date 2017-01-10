@@ -30,7 +30,6 @@
  _.eq(NaN, NaN);
  // => true
 ###
-eq (value, other) ->
-    if value is other then yes else no
+eq = (value, other) -> value is other
 
-export default eq;
+module.exports eq
