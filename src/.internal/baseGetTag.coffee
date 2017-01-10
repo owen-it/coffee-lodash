@@ -1,5 +1,5 @@
-getRawTag = require './.internal/getRawTag'
-objectToString = require './.internal/objectToString'
+getRawTag = require './getRawTag'
+objectToString = require './objectToString'
 
 # `Object#toString` result references.
 nullTag = '[object Null]'
