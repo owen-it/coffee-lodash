@@ -6,7 +6,7 @@ describe 'isSymbol method', ->
     beforeEach ->
         # ...
     it 'Shoud return true', ->
-        result = isSymbol Symbol.intarator
+        result = isSymbol Symbol.iterator
         expect(true).to.eql(result)
         
     it 'Shoud return false', ->
