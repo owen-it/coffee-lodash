@@ -1,7 +1,7 @@
 expect = require 'expect.js'
 
 
-first = require '../src/eq'
+eq = require '../src/eq'
 
 
 describe 'Eq method', ->
