@@ -1,8 +1,6 @@
 expect = require 'expect.js'
 
-
 isObject = require '../src/isObject'
-
 
 describe 'isObject method', ->
     beforeEach ->
