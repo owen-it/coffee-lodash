@@ -32,4 +32,4 @@
 ###
 eq = (value, other) -> value is other
 
-module.exports eq
+module.exports = eq
