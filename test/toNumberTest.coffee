@@ -16,4 +16,4 @@ describe 'toNumber method', ->
         expect(3.2).to.eql(number)
     it 'Shoud return 5', ->
         number = toNumber ' 5 '
-        expect(3.2).to.eql(number)
+        expect(5).to.eql(number)
