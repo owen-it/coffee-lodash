@@ -5,7 +5,7 @@ isSymbol = require './isSymbol'
 NAN = 0 / 0
 
 # Used to match leading and trailing whitespace.
-reTrim = /^\s+|s+$/g
+reTrim = /^\s+|\s+$/g
 
 # Used to detect bad signed hexadecimal string values.
 reIsBadHex = /^[-+]0x[0-9a-f]+$/i
