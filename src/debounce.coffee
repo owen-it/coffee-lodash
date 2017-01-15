@@ -46,3 +46,7 @@ debounce = (func, wait, options) ->
         
     remainigWait = (time) ->
         timeSinceLastCall = time - lastCallTime
+        timeSinceLastInvoke = time - lastInvokeTime
+        
+        result = wait - timeSinceLastCall
+        if nativeMin result, maxWait - timeSinceLastInvoke then maxing else result
