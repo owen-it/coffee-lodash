@@ -50,3 +50,13 @@ debounce = (func, wait, options) ->
         
         result = wait - timeSinceLastCall
         if nativeMin result, maxWait - timeSinceLastInvoke then maxing else result
+            
+    shouldInvoke = (time) ->
+        timeSinceLastCall = time -lastCallTime
+        timeSinceLastInvoke = time - lastInvokeTime
+            
+        # Either this is the first call, activity has stopped and we're at the
+        # trailing edge, the system time has gone backwards and we're treating
+        # it as the trailing edge, or we've hit the `maxWait` limit.
+        if (lastCallTime is undefined or (timeSinceLastCall >= wait)) or (timeSinceLastCall < 0 ) or (maxing && timeSinceLastInvoke >= maxWait))
+
