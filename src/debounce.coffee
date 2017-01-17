@@ -60,7 +60,7 @@ debounce = (func, wait, options) ->
         # it as the trailing edge, or we've hit the `maxWait` limit.
         if (lastCallTime is undefined or (timeSinceLastCall >= wait)) or (timeSinceLastCall < 0 ) or (maxing && timeSinceLastInvoke >= maxWait))
 
-    timerExpired () ->
+    timerExpired = () ->
         time = Date.now()
         if shouldInvoke time then return trailingEdge time
         
