@@ -2,7 +2,7 @@ expect = require 'expect.js'
 
 eq = require '../src/eq'
 
-describe 'Eq method', ->
+describe 'eq method', ->
     beforeEach ->
         # ...
     it 'Shoud return true', ->
