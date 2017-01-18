@@ -5,6 +5,7 @@ isObjectLike = require '../src/isObjectLike'
 describe 'isObjectLike method', ->
     beforeEach ->
         # ...
+        
     it 'Shoud return true', ->
         result = isObjectLike {}
         expect(true).to.eql(result)
