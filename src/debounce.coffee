@@ -67,4 +67,12 @@ debounce = (func, wait, options) ->
         # restart the timer
         timerId = setTimeout timerExpired, remainingWait time
         
-        null
+    trailingEdge = (time) ->
+        timerId = undefined
+        
+        # Only invoke if we have `lastArgs` whith means `func` has
+        # ben debouced at last once.
+        return invokeFunc time if trailing and lastArgs
+        
+        lastArgs = lastThis = undefined
+        result
