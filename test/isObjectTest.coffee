@@ -5,6 +5,7 @@ isObject = require '../src/isObject'
 describe 'isObject method', ->
     beforeEach ->
         # ...
+        
     it 'Shoud return true', ->
         result = isObject {}
         expect(true).to.eql(result)
