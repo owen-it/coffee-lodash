@@ -1,8 +1,8 @@
 expect = require 'expect.js'
 
-eq = require '../src/isString'
+isString = require '../src/isString'
 
-describe 'IsString method', ->
+describe 'isString method', ->
     beforeEach ->
         # ...
         
