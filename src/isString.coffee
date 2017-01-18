@@ -1,0 +1,1 @@
+baseGetTag = require './.internal/baseGetTag'
