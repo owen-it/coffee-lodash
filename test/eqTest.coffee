@@ -1,8 +1,6 @@
 expect = require 'expect.js'
 
-
 eq = require '../src/eq'
-
 
 describe 'Eq method', ->
     beforeEach ->
