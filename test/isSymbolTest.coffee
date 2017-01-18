@@ -5,6 +5,7 @@ isSymbol = require '../src/isSymbol'
 describe 'isSymbol method', ->
     beforeEach ->
         # ...
+        
     it 'Shoud return true', ->
         result = isSymbol Symbol.iterator
         expect(true).to.eql(result)
