@@ -1,10 +1,8 @@
 expect = require 'expect.js'
 
-
 last = require '../src/last'
 
-
-describe 'Last method', ->
+describe 'last method', ->
     beforeEach ->
         # ...
     it 'Shoud return 7', ->
