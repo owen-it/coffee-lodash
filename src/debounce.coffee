@@ -76,3 +76,9 @@ debounce = (func, wait, options) ->
         
         lastArgs = lastThis = undefined
         result
+
+    cancel = () -> 
+        clearTimeout timeId if timerId is undefined
+            
+        lastInvokeTime = 0
+        lastAtgs = lastCallTime = lastThis = timerId = undefined
