@@ -82,3 +82,7 @@ debounce = (func, wait, options) ->
             
         lastInvokeTime = 0
         lastAtgs = lastCallTime = lastThis = timerId = undefined
+
+    flush = () ->
+        return if timerId === undefined  then result else trailing Date.now()
+ 
