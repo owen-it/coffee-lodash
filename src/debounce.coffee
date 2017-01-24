@@ -52,7 +52,7 @@ debounce = (func, wait, options) ->
         if nativeMin result, maxWait - timeSinceLastInvoke then maxing else result
             
     shouldInvoke = (time) ->
-        timeSinceLastCall = time -lastCallTime
+        timeSinceLastCall = time - lastCallTime
         timeSinceLastInvoke = time - lastInvokeTime
             
         # Either this is the first call, activity has stopped and we're at the
@@ -87,3 +87,27 @@ debounce = (func, wait, options) ->
         return if timerId === undefined  then result else trailing Date.now()
 
     debounce = (...args) ->
+        time = Date.now()
+        isInvoking = shouldInvoke time
+        
+        lastArgs = args
+        lastThis = this
+        lastCallTime = time
+        
+        if isInvoking 
+            if timeId is undefined
+                return leadingEdge lastCallTime
+            if maxing 
+                timerId = setTimeout timerExpired, wait
+                return invokeFunc lastCallTime
+                
+        if timerId is undefined 
+            timerId = setTimeout timerExpired, wait
+            
+        result
+        
+    debouced.cancel = cancel
+    debouced.flush = flush
+    debouced # return 
+
+module.exports debounce
