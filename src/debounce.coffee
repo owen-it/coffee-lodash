@@ -85,4 +85,5 @@ debounce = (func, wait, options) ->
 
     flush = () ->
         return if timerId === undefined  then result else trailing Date.now()
- 
+
+    debounce = (...args) ->
