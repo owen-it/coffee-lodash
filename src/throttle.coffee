@@ -50,7 +50,7 @@ throttle = (func, wait, options = {}) ->
     
     if typeof func isnt 'function' then throw new TypeError 'Expecte a function'
     
-    if isObject 
+    if isObject options
         leading = !!options.leading if 'leading' in options
         trailing = !!options.trailing if 'trailing' in options
 
