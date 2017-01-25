@@ -53,8 +53,7 @@ throttle = (func, wait, options = {}) ->
     if isObject 
         leading = !!options.leading if 'leading' in options
         trailing = !!options.trailing if 'trailing' in options
-        
-    
+
     debounce func, wait, {
         'leading': leading,
         'maxwait': wait,
